@@ -17,4 +17,12 @@ using the German Credit Data dataset, to support credit lending decisions.
 
 ## Business Insight
 The model performs well at identifying good payers, but has room for 
-improvement in detecting defaulters (recall: 0.58), which
+improvement in detecting defaulters (recall: 0.58), which represents 
+the costliest error for a financial institution. This opens the door 
+to adjusting the model with class_weight='balanced' or exploring a 
+different decision threshold than the default 0.5.
+
+## Next Steps
+- Test class_weight='balanced'
+- Compare against Random Forest / XGBoost
+- Adjust the decision threshold based on business cost
